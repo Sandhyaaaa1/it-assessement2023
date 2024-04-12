@@ -1,0 +1,74 @@
+<html>
+<head>
+<style>
+  .rectangle {
+    width: 450px;
+    height: 450px;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .form-label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="rectangle">
+  <h2>HTML Form Test</h2>
+  <p>
+    <label class="form-label">Name : </label>
+    <input type="text" name="name" />
+  </p>
+  <p>
+    <label class="form-label">Address </label>
+    <input type="text" name="address" />
+  </p>
+  <p>
+    <label class="form-label">Email </label>
+    <input type="text" name="Email" />
+  </p>
+  <p>
+    <label class="form-label">Gender</label>
+    <input type="radio" id="Male" name="gender" value="Male" />
+    <label for="Male">Male</label>
+    <input type="radio" id="Female" name="gender" value="Female" />
+    <label for="Female">Female</label>
+    <input type="radio" id="Other" name="gender" value="Other" />
+    <label for="Other">Other</label>
+  </p>
+  <p>
+    <label class="form-label">Hobbies</label>
+    <input type="checkbox" name="Hobby" value="sports" />
+    <label for="sports">Sports</label>
+    <input type="checkbox" name="Hobby" value="Movies" />
+    <label for="Movies">Movies</label>
+    <input type="checkbox" name="Hobby" value="Travelling" />
+    <label for="Travelling">Travelling</label>
+  </p>
+  <p>
+    <label class="form-label">Country</label>
+    <select name="Country">
+        <option value="c1" > Nepal </option>
+        <option value="C2" > Canada </option>
+        <option value="C3" > UK </option>
+        <option value="c4" > India </option>
+        <option value="usa" > USA </option>
+    </select>
+  </p>
+  <p>
+    <label class="form-label">Message</label>
+
+    <textarea rows="5" cols="30"></textarea>
+  </p>
+  <p>
+    <label class="form-label">&nbsp;</label>
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Reset" />
+  </p>
+</div>
+</body>
+</html>

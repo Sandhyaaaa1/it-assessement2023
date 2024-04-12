@@ -1,0 +1,43 @@
+<html>
+<head>
+<style>
+  .rectangle {
+    width: 350px;
+    height: 500px;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .form-label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 20px;
+  }
+</style>
+</head>
+<body>
+    <div class="rectangle">
+        <h1> Search  Our website </h1>
+        <hr width=50% align="right" width="600px" maxlength="65" color=black ><br><br>
+
+        <p> Where do you want to search </p><br><br>
+        <p>
+        
+        <input type ="radio" id="Whole Site" name="search" value="Whole Site" checked>Whole Site<br>
+        <input type = "radio" id="Business Prtner Section" name="search" value="Business Partner Section"> Business Partner Section<br>
+        <input type = "radio" id="Corporate Communications Sectio"  name="search" value="Corporate Communications Section"> Corporate Communications Section<br>
+        <input type = "radio" id="Lotus Education Section" name="search" value="Lotu Education Section"  >Lotus Education Section<br><br>
+        </p>
+        <p>
+            Enter a word or two that we can search on:
+            <br>
+            <input  type="text" id="word" size="30"><br><br>
+            
+            <input type="submit" onclick="Search()" value="Submit">
+            <input type="button"  onclick="ResetForm()" value="Clear">
+        </p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Array Manipulation</title>
+</head>
+<body>
+
+<!-- Input field for adding elements -->
+<input type="text" id="text1">
+<!-- Button to add element to array -->
+<input type="button" id="button1" value="Add" onclick="add_item_to_array()">
+<!-- Button to display the array -->
+<input type="button" id="button2" value="Display" onclick="display_array()">
+<!-- Container to display the array -->
+<div id="Result"></div>
+
+<script>
+// Initialize array and index counter
+var array = [];
+var x = 0;
+
+// Function to add item to array
+function add_item_to_array() {
+    var inputValue = document.getElementById("text1").value;
+    array[x] = inputValue;
+    alert("Element: " + inputValue + " added at index " + x);
+    x++;
+    document.getElementById("text1").value = "";
+    
+
+    }
+
+
+// Function to display array elements
+//just enter the values and addd and when pressed display it displays the elements in order with index
+function display_array() {
+    var e = "<hr/>";
+    for (var y = 0; y < array.length; y++) {
+        e += "Element " + y + " = " + array[y] + "<br/>";
+    }
+    document.getElementById("Result").innerHTML += e;
+}
+</script>
+
+</body>
+</html>

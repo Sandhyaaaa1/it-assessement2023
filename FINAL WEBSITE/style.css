@@ -1,0 +1,140 @@
+/* Consolidated CSS for your pages */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Set a unique background color */
+  margin: 0;
+  padding: 0;
+  color: #695b5b; /* Text color for body */
+  min-height: 100vh;
+}
+
+nav {
+  background-color: #333; /* Dark background color for navigation bar */
+  padding: 20px 0; /* Increased padding to make the navigation bar taller */
+}
+
+#main-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#main-nav li {
+  display: inline;
+}
+
+#main-nav li a {
+  display: inline-block;
+  padding: 10px 20px; /* Adjusted padding to increase the size of the links */
+  text-decoration: none;
+  color: #fff; /* White text color for navigation links */
+  font-size: 18px; /* Increased font size for navigation links */
+}
+
+#main-nav li a:hover {
+  background-color: #555; /* Darker background color on hover */
+}
+
+header {
+  background-color: #333; /* Dark background color for header */
+  color: #fff; /* White text color for header */
+  text-align: center;
+  padding: 20px 0;
+}
+
+header .image-slider {
+  position: relative;
+}
+
+header .image-slider p {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+section,
+aside {
+  flex-basis: 45%;
+}
+
+footer{
+  bottom: 0;
+  background-color: hsl(0, 0%, 0%);
+  width: 100%;
+  padding: 0px;
+  color: #fff;
+  }
+  
+  .footer-content{
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .footer-content h3{
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 1.875rem;
+  text-align: center;
+  color: hsl(86, 72%, 33%);
+  margin-top: 1.25rem;
+  font-family: Poppins;
+  margin-left: 1.25rem;
+  }
+  
+  .footer-content h4{
+    font-size: larger;
+    text-align: right;
+    margin-right: 2.5rem;
+  }
+  
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 1rem 0 3rem 0;
+    margin-right: 0.25rem;
+  }
+  
+  .socials li{
+    margin: 0 0.625rem;
+  }
+  
+  .socials a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .socials a i{
+    font-size: 1.1rem;
+    transition: color 0.4s ease;
+  }
+  
+  .socials a:hover i{
+    color: aqua;
+  }
+  
+  .footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 1.25rem 0;
+    text-align: center;
+  }
+
+.image-slider-img {
+  width: 900px; /* Set width to 900 pixels */
+  height: 500px; /* Set height to 900 pixels */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
